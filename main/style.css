@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;700&display=swap');
 
 *{
     font-family: 'Inter', sans-serif;
@@ -16,10 +16,12 @@
 }
 
 /* screen */
+html{
+    height: 100%;
+}
 body{
     margin: 5vh 15vh;
-    background-repeat: no-repeat;
-    height:inherit;
+    /* background-repeat: no-repeat; */
     max-width: 1440px;
 }
 
@@ -114,13 +116,6 @@ input:checked + .slider:before {
  }
   
   /* Responsive columns */
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-}
 .header{
     height: fit-content;
 }
@@ -223,7 +218,12 @@ input:checked + .slider:before {
         font-size: 2rem;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+    .adjust{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 800px) {
     .row{
         flex-direction: column;
     }   
